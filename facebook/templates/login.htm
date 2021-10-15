@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Auth</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="{% static 'index.js' %}"></script>
+</head>
+
+<body>
+    <div class="row">
+        <div class="left-custom col-8">
+            <img class="facebookIco" src="fb.svg" alt="">
+            <p class='fb_des'>Facebook giúp bạn kết nối và chia sẻ <br />với mọi người trong cuộc sống của bạn.</p>
+        </div>
+        <div class="right-custom col-4">
+            <input class="in1" type="text" placeholder="Email hoặc số điện thoại">
+            <input class="in1" type="password" placeholder="Mật khẩu">
+            <button class="submitBtnCustom" type="submit">Đăng nhập</button>
+            <a href="#">
+                <p class="pf">Quên mật khẩu?</p>
+            </a>
+            <hr class="divider" style="color: gray">
+            <button class="openBtn" id="openBtn">Tạo tài khoản mới</button>
+        </div>
+    </div>
+</body>
+
+</html>
